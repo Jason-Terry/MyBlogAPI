@@ -1,14 +1,23 @@
-// lib/app.ts
+// src/main.ts
 import express = require('express');
+import bodyParser = require('body-parser');
 
-// Create a new express application instance
-const app: express.Application = express();
-const port: number = 1313
+// const declarations
+const SERVER: express.Application = express();
+const PORT: number = 1313;
+const API: express.Router = require('./routes/api'); 
 
-app.get('/', function (req, res) {
+
+SERVER.use(bodyParser.json());
+
+// Routes
+SERVER.use('/api', API);
+
+
+SERVER.get('/', function (req, res) {
   res.send('Hello World!');
 });
 
-app.listen(port, function () {
-  console.log('Server listening on port ' + port + ".");
+SERVER.listen(PORT, function () {
+  console.log('Server listening on port ' + PORT + ".");
 });
