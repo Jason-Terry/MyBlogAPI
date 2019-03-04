@@ -1,4 +1,5 @@
 // src/main.ts
+// mongodb+srv://User:IrDxlO8uO4T6sPzo@cluster0-rpvs1.azure.mongodb.net/BlogDB?retryWrites=true
 import express = require('express');
 import bodyParser = require('body-parser');
 
