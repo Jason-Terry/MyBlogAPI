@@ -1,6 +1,6 @@
 # MyBlogAPI
-A backend to handle the DB read and writes for my blog.
+- A backend to handle the DB read and writes for my blog.
 
-Not sure if this is even needed.
-
-Using TS, developing a node backend to handle the reads and writes to my DB to store my blog posts.
+- Handles Authentication to Blog CMS
+- Handles storing blog posts to db
+- Handles fetching blog posts from db
